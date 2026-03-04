@@ -1,0 +1,128 @@
+/*
+* {
+    outline: 1px solid red !important;
+}
+    */
+
+html {
+    font-family: "Arial", "Helvetica";
+}
+
+h4 {
+    
+}
+
+.container-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container-bio-card {
+    display: flex;
+    align-items: column;
+    background-color: rgb(238, 237, 237);
+    max-width: 60vw;
+    padding: 50px;
+    border-radius: 50px;
+    
+}
+
+.container-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-portrait {
+    margin-right: 5%;
+}
+
+
+.container-why-warp {
+    margin-top: 50px;
+    background-color: greenyellow;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.card-price, .card-passion, .card-relaxed {
+    background-color: aqua;
+    width: 50%;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+form {
+    background-color: rgb(228, 174, 211);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid purple;
+}
+
+.radio-btn {
+    width: 5%;
+}
+
+table {
+    border-radius: 10px;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 0px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+
+
+th {
+    background-color: pink;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+th:first-of-type {
+    border-top-left-radius: 10px;
+}
+
+th:last-of-type {
+    border-top-right-radius: 10px;
+}
+
+
+td {
+    background-color: #add8e6;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    transition: 0.3s;
+}
+
+
+tr:hover td {
+    background-color: #91b4c0; 
+    transform: 1s ease-in;
+}
