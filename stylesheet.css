@@ -64,6 +64,46 @@ h4 {
     border-radius: 15px;
 }
 
+:root {
+    --total: 6;
+    --radius: 250px;
+}
+
+.container-icons {
+    position: relative;
+    width: calc(var(--radius) * 2);
+    height: calc(var(--radius) * 2);
+    margin: 100px auto;
+}
+
+.container-icons img, .container-icons p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;   
+    margin: -30px;
+    display: grid;
+    place-items: center;
+
+    --angle: calc(360deg / var(--total) * var(--i));
+
+    transform: 
+    rotate(var(--angle))
+    translateX(var(--radius))
+    rotate(calc(-1 * var(--angle)));
+}
+
+.container-icons p {
+    text-align: center;
+    width: 100px;
+    margin-top: 10%;
+    margin-left: -10%;
+}
+
+
+
+
+
 form {
     background-color: rgb(228, 174, 211);
     border-radius: 20px;
