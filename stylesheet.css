@@ -11,9 +11,10 @@
     --p3-grey: #c1cede;
     --p3-grey-box: #b3b7c0;
     --p3-dark-grey: #8c8c8c;
-    --p3-red: #e74c3c;
+    --p3-red: #692431;
     --p3-teal: #6fffff;
-    --p3-text: #dedcff;
+    --p3-text: #57565c;
+    --p3-box-border: #d0d5e9;
 
     --totalicons: 6;
     --radius: 340px;
@@ -27,7 +28,7 @@ html {
 
 h1 {
     color: var(--p3-yellow);
-    font-size: 50px;
+    font-size: 44px;
 }
 
 h2 {
@@ -53,8 +54,8 @@ p {
     background-color: var(--p3-grey-box);
     max-width: 60vw;
     padding: 50px;
-    border-radius: 20px / 30px;
-    border: 2px solid var(--p3-text);
+    border-radius: 20px;
+    border: 2px solid var(--p3-box-border);
     filter: drop-shadow(10px 10px 0px rgba(103, 101, 101, 0.336));
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     
@@ -74,7 +75,7 @@ p {
 
 .container-why-warp {
     margin-top: 50px;
-    background-color: greenyellow;
+    background-color: var(--p3-dark-blue);
     max-width: 100%;
     padding: 20px;
     text-align: center;
@@ -89,7 +90,7 @@ p {
 .card-price, .card-passion, .card-relaxed {
     background-color: aqua;
     width: 50%;
-    height: 200px;
+    height: auto;
     padding: 20px;
     margin: 10px;
     border-radius: 15px;
