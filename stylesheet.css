@@ -1,15 +1,43 @@
 /*
 * {
     outline: 1px solid red !important;
+} */
+
+:root {
+    --p3-bg-blue: #0f8bed;
+    --p3-dark-blue: #00293f;
+    --p3-yellow: #f1c40f;
+    --p3-light-blue: #7adbfd;
+    --p3-grey: #c1cede;
+    --p3-grey-box: #b3b7c0;
+    --p3-dark-grey: #8c8c8c;
+    --p3-red: #e74c3c;
+    --p3-teal: #6fffff;
+    --p3-text: #dedcff;
+
+    --totalicons: 6;
+    --radius: 340px;
 }
-    */
+    
 
 html {
     font-family: "Arial", "Helvetica";
+    background-color:  var(--p3-bg-blue);
 }
 
-h4 {
-    
+h1 {
+    color: var(--p3-yellow);
+    font-size: 50px;
+}
+
+h2 {
+    color: var(--p3-red);
+}
+
+p {
+    color: var(--p3-text);
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .container-index {
@@ -22,10 +50,13 @@ h4 {
 .container-bio-card {
     display: flex;
     align-items: column;
-    background-color: rgb(238, 237, 237);
+    background-color: var(--p3-grey-box);
     max-width: 60vw;
     padding: 50px;
-    border-radius: 50px;
+    border-radius: 20px / 30px;
+    border: 2px solid var(--p3-text);
+    filter: drop-shadow(10px 10px 0px rgba(103, 101, 101, 0.336));
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     
 }
 
@@ -64,10 +95,6 @@ h4 {
     border-radius: 15px;
 }
 
-:root {
-    --total: 6;
-    --radius: 250px;
-}
 
 .container-icons {
     position: relative;
@@ -76,16 +103,20 @@ h4 {
     margin: 100px auto;
 }
 
+/* Arranging icons into a circle stuff */
+
 .container-icons img, .container-icons p {
+    transform-origin: 50% 50%;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 60px;   
+    width: 70px;   
     margin: -30px;
     display: grid;
     place-items: center;
+    transition: 0.4s;
 
-    --angle: calc(360deg / var(--total) * var(--i));
+    --angle: calc(360deg / var(--totalicons) * var(--i));
 
     transform: 
     rotate(var(--angle))
@@ -97,11 +128,31 @@ h4 {
     text-align: center;
     width: 100px;
     margin-top: 10%;
-    margin-left: -10%;
+    margin-left: -6.4%;
+}
+
+#icon-desc {
+    width: 500px;
+    text-align: center;
+    margin: 0%;
+    left: 15%;
+}
+
+.container-icons img:hover {
+    transition: 0.4s ease;
+    filter: drop-shadow(2px 2px 5px rgba(85, 83, 83, 0.732));
+    transform: rotate(var(--angle)) translateX(var(--radius)) rotate(calc(-1 * var(--angle))) scale(1.3);
+    text-decoration-thickness: 0.4s;
+}
+
+.container-icons img {
+    
 }
 
 
-
+.btn-quote {
+    margin-top: 100%;
+}
 
 
 form {

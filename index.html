@@ -4,6 +4,7 @@
     <head>
         <title>WARP Websites</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <script src="script.js"></script>
     </head>
 
     <p><a href="faq.html">FAQ Page</a></p>
@@ -18,8 +19,9 @@
 
 
     <div class="container-bio">
-    <p><h2>Websites at a Reasonable Price</h2>
+    <h2>Websites at a Reasonable Price</h2>
         <br>
+        <p>
         WARP is an independent, freelance web development business aiming to create sleek, 
         affordable and blazing fast websites for phones and computers.
         WARP is primarily a one man team started by Chris in early 2026 
@@ -69,14 +71,16 @@
     <p>Prices will vary depending on what exaclty your website will need. I offer a form that will let you get a quote on demand!.
         <br><br>As a quick overview, I offer the following for your website:<br> </p>
         <div class="container-icons">
-    <img src="images/icons/search.png" style="--i: 0"/><p class="icon-text" style="--i: 0">Search Engine Optimization (SEO)</p><br>
-    <img src="images/icons/mobile-hand.png" style="--i: 1"/><p class="icon-text" style="--i: 1">Mobile Friendly Design</p><br>
-    <img src="images/icons/ui-ux.png" style="--i: 2"/><p class="icon-text" style="--i: 2">User Friendly And Accessible Designs</p><br>
-    <img src="images/icons/user-headset.png" style="--i: 3"/><p class="icon-text" style="--i: 3">Technical Support</p><br>
-    <img src="images/icons/user-headset.png" style="--i: 4"/><p class="icon-text" style="--i: 4">Technical Support</p><br>
-    <img src="images/icons/handshake.png" style="--i: 5"/><p class="icon-text" style="--i: 5">Seamless handover to client</p>
+    <img onmouseover="iconHover('search')" src="images/icons/search.svg" style="--i: 0"/><p class="icon-text" style="--i: 0">Search Engine Optimization (SEO)</p><br>
+    <img onmouseover="iconHover('mobile')" src="images/icons/mobile-hand.png" style="--i: 1"/><p class="icon-text" style="--i: 1">Mobile Friendly Design</p><br>
+    <img onmouseover="iconHover('ui-ux')" src="images/icons/ui-ux.png" style="--i: 2"/><p class="icon-text" style="--i: 2">User Friendly And Accessible Designs</p><br>
+    <p id="icon-desc">Hover over an icon!</p>
+    <img onmouseover="iconHover('support')" src="images/icons/user-headset.png" style="--i: 3"/><p class="icon-text" style="--i: 3">Technical Support</p><br>
+    <img onmouseover="iconHover('support')" src="images/icons/user-headset.png" style="--i: 4"/><p class="icon-text" style="--i: 4">Technical Support</p><br>
+    <img onmouseover="iconHover('handshake')" src="images/icons/handshake.png" style="--i: 5"/><p class="icon-text" style="--i: 5">Seamless handover to client</p>
         </div>
-    <a href="pricing.html"><button>Get Quote</button></a>
+
+    <a href="pricing.html"><button class="btn-quote">Get Quote</button></a>
 
 
 
